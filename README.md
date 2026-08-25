@@ -1,17 +1,15 @@
-# SRE Automation & Telemetry Tool
+A lightweight, enterprise-grade CLI automation utility built with **TypeScript** and **Node.js**. Designed for cloud-agnostic Site Reliability Engineering workflows, native host metric collection, and external infrastructure telemetry integration.
 
-Ferramenta CLI utilitária desenvolvida em **TypeScript** e **Node.js** com foco em automações agnósticas de SRE, coleta nativa de métricas de host e integração com APIs de telemetria externa.
-
-## Stack Técnica
+## Tech Stack
 - **Runtime:** Node.js (v20+)
-- **Linguagem:** TypeScript (ESNext / NodeNext)
-- **Execução & Dev:** TSX
-- **Módulos Nativos:** `node:os`, `node:path`, `node:crypto`, `node:fs`
+- **Language:** TypeScript (ESNext / NodeNext)
+- **Execution Engine:** TSX
+- **Core Modules:** `node:os`, `node:path`, `node:crypto`, `node:fs`
 
-## Arquitetura de Diretórios
+## Project Structure
 ```text
 src/
-├── config/       # Módulo agnóstico de ambiente e credenciais
-├── services/     # Serviços de telemetria externa e auditoria mecânica
-├── utils/        # Funções utilitárias nativas de hardware
-└── main.ts       # Orquestrador assíncrono do pipeline
+├── config/       # Environment-agnostic configurations and credentials
+├── services/     # Core business logic (External Telemetry & System Audits)
+├── utils/        # Reusable native hardware and system utilities
+└── main.ts       # Asynchronous pipeline orchestrator (Entrypoint)
